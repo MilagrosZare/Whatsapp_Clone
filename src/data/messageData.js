@@ -31,7 +31,6 @@ const contacts = [
                 hour: '15:10',
                 id: 1,
                 text: 'Hola, ¿estás ocupada?',
-                stattus: 'visto',
             },
             {
                 user: 'TÚ',
@@ -45,7 +44,6 @@ const contacts = [
                 hour: '15:15',
                 id: 3,
                 text: '¿Te parece si salimos a tomar un café y te cuento un chismecito? 😏',
-                stattus: 'visto',
             },
             {
                 user: 'TÚ',
@@ -67,7 +65,6 @@ const contacts = [
                 hour: '08:00',
                 id: 1,
                 text: 'Hola Milagros, ¿ya llegaste a la oficina?',
-                stattus: 'visto',
             },
             {
                 user: 'TÚ',
@@ -81,10 +78,9 @@ const contacts = [
                 hour: '08:01',
                 id: 3,
                 text: 'Vení a la sala verde, por favor, tenemos reunión.',
-                stattus: 'visto',
             },
             {
-                user: 'USUARIO',
+                user: 'TÚ',
                 hour: '23:10',
                 id: 4,
                 text: '¡Ok! Acomodo mis cosas y voy...',
@@ -103,14 +99,12 @@ const contacts = [
                 hour: '01:15',
                 id: 1,
                 text: 'Holaaa, ¡ayuda! ¿Alguien ahí?',
-                stattus: 'no-visto',
             },
             {
                 user: 'USUARIO2',
                 hour: '02:00',
                 id: 2,
                 text: 'Yo, acá. Terminando el trabajo. 😪',
-                stattus: 'no-visto',
             },
             {
                 user: 'TÚ',
@@ -123,36 +117,31 @@ const contacts = [
                 user: 'USUARIO1',
                 hour: '02:16',
                 id: 4,
-                text: 'Hace media hora estoy intentando encontrar el error, ¿alguien puede ver qué es?', // VER SI SE PUEDE AGREGAR FOTO
-                stattus: 'no-visto',
+                text: 'Hace media hora estoy intentando encontrar el error, ¿alguien puede ver qué es?',
             },
             {
                 user: 'USUARIO3',
                 hour: '02:18',
                 id: 5,
                 text: 'Te falta una coma... 🤨',
-                stattus: 'no-visto',
             },
             {
                 user: 'USUARIO4',
                 hour: '02:19',
                 id: 6,
                 text: 'Es muy tarde chicos, vayan a descansar.',
-                stattus: 'no-visto',
             },
             {
                 user: 'USUARIO5',
                 hour: '02:30',
                 id: 7,
                 text: 'Holaaa, yo tengo otra duda. 😭',
-                stattus: 'no-visto',
             },
             {
                 user: 'USUARIO1',
                 hour: '02:31',
                 id: 8,
                 text: 'Graciasss @PabloUTN 🙌🙌',
-                stattus: 'no-visto',
             },
             {
                 user: 'TÚ',
@@ -166,7 +155,6 @@ const contacts = [
                 hour: '02:36',
                 id: 10,
                 text: '¡Creo que ya encontré el error! Perdón chicos, estoy quemadísimaaa.',
-                stattus: 'no-visto',
             },
             {
                 user: 'TÚ',
@@ -187,7 +175,20 @@ const contacts = [
                 hour: '16:10',
                 id: 1,
                 text: '¡Hola amor! ¿Te parece si el finde nos vemos?',
-                stattus: 'visto',
+            },
+            {
+                user: 'TÚ',
+                hour: '16:12',
+                id: 2,
+                text: 'Hola corazón, sí, obvio.',
+                stattus: 'no-visto',
+            },
+            {
+                user: 'TÚ',
+                hour: '16:12',
+                id: 2,
+                text: '¿Vamos a un Starbucks?',
+                stattus: 'pendiente',
             },
         ]
 

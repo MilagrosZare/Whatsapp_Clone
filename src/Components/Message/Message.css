@@ -1,3 +1,11 @@
+.chat-container {
+    display: flex;
+    font-size: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .top{
     display: flex;
     flex-direction: column;
@@ -6,64 +14,68 @@
 .bottom{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 5px;
-    align-items: end;
-}
-
-.chat-container {
-    display: flex;
-    border-radius: 15px;
-    font-size: 20px;
-    height: 80px;
-    gap: 20px;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 20px;
+    height: 12px;
+    padding: 10px 30px 7px 0;
 }
 
 .my-message {
+    max-width: 70%;
+    word-wrap: break-word;
+    text-align: end;
     color: #fff;
     background-color: rgb(0, 92, 75);
-    display: flex;
     margin-left: auto;
+    margin-right: 40px;
     gap: 20px;
-    padding: 10px 0 5px 30px;
-    border-radius: 15px;
-    height: 80px;
-    width: 45vh;
+    padding: 8px 25px 10px 8px;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    font-size: 20px;
+    flex-wrap: wrap-reverse;
+    display: flex;
 }
 
 .other-message {
+    max-width: 70%;
+    word-wrap: break-word;
     color: #fff;
     background-color: rgb(32, 44, 51);
-    display: flex;
     margin-right: auto;
-    padding: 10px 10px 5px 25px;
-    border-radius: 15px;
-    height: 80px;
+    margin-left: 40px;
+    padding: 8px 9px 10px 15px;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
     justify-content: space-between;
     gap: 20px;
+    display: flex;
 }
 
-.bi-check2-all {
-    color: rgb(83,189,235);
-    font-size: 12px;
-}
-
-.message-user{
-    font-size: 12px;
-}
 
 .message-text{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .message-hour{
-    font-size: 12px;
+    font-size: 11px;
     color: #ffffffa4;
+    text-align: end;
+    align-items: end;
+    
 }
 
-.two-check-blue, .two-check, .one-check {
-    font-size: 12px;
+.message-stattus{
+    font-size: 15px;
+}
+
+.blue-double-check{
+    color: var(--blue-check);
+}
+
+.double-check, .pending{
+    color: var(--check);
 }
