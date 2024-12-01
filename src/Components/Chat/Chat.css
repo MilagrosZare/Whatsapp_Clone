@@ -1,0 +1,45 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between
+        /* esto puede modificarse por el NewMessage */
+}
+
+.component-HeaderChat {
+    height: 8vh;
+}
+
+.component-MessageList {
+    flex: 1;
+    height: 50px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.component-MessageList::-webkit-scrollbar {
+    width: 4px;
+}
+
+.component-MessageList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.component-MessageList::-webkit-scrollbar-thumb {
+    background-color: rgba(53, 66, 73, 0.705);
+    border-radius: 10px;
+}
+
+.component-NewMessage {
+    height: auto;
+}
+
+.chat-screen {
+    background-image: url(/assets/wallpaper-dark-mode.png);
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    margin-top: 20px;
+    width: 60vw;
+}

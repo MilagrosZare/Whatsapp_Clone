@@ -1,0 +1,20 @@
+.container-contact{
+    display: flex;
+    border-bottom: 0.5px rgba(104, 119, 127, 0.178) solid;
+    padding: 10px 10px;
+    margin: 5px 20px 0px 0px;
+    gap: 10px;
+}
+
+.contact-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.contact-name{
+    font-size: 15px;
+    color: var(--primary-font-color);
+    font-weight: 400;
+}
+

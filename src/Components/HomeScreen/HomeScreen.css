@@ -1,0 +1,62 @@
+.container-download{
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 95vh;
+    padding-top: 180px;
+    width: 60vw;
+    margin-top: 20px;
+}
+
+.title-homescreen{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.container-text{
+    font-size: 15px;
+    color: #ffffffd2;
+    text-align: center;
+    align-items: center ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.container-text-bottom{
+    border-radius: 25px;
+    background-color: var(--selected-font-color);
+    padding: 12px;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text-homescreen{
+    width: 70%;
+    justify-content: center;
+    font-weight: 200;
+    color: #ffffffd2;
+}
+
+.download-Microsoft{
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+}
+
+.personal-messages{
+    color: var(--secondary-font-color);
+    font-size: 12px;
+    height: 20px;
+    padding-top: 150px;
+}
+
+.download-img{
+    width: 20vw;
+}

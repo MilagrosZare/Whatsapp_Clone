@@ -1,0 +1,25 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+:root {
+    --primary-color: rgb(17,27,33);
+    --secondary-color: rgb(34,46,53);
+    --tertiary-color: rgb(32,44,51);
+    --selected-color: rgb(10,51,44);
+    --selected-font-color: rgb(0,151,107);
+    --primary-font-color: rgba(233, 237, 239, 0.932);
+    --secondary-font-color:rgb(104,119,127);
+    --tertiary-font-color: rgb(183,189,192);
+    --icon-primary-color: rgb(126,142,152);
+    --icon-secondary-color:rgb(209,215,219);
+    --background-color: rgb(38,37,36);
+}

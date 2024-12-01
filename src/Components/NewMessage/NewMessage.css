@@ -1,0 +1,55 @@
+.message-bar{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    gap: 5px;
+    height: 60px;
+    background-color: var(--tertiary-color);
+}
+
+.right-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 15px 15px 30px;
+}
+
+.icon-smile {
+    color: var(--icon-primary-color);
+    font-size: 28px;
+}
+
+.icon-plus {
+    color: var(--icon-secondary-color);
+    font-weight: 200;
+}
+
+.input-and-icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    background-color: rgb(42, 57, 66);
+    margin: 8px;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    height: 45px;
+    outline: none;
+    width: 90%;
+    color: #fff;
+    font-size: 15px;
+}
+
+.mic-or-send {
+    color: var(--icon-primary-color);
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 5px 10px;
+    margin-left: 10px;
+    font-size: 22px;
+}
