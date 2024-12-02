@@ -29,9 +29,9 @@
 
 .container-text-bottom{
     border-radius: 25px;
-    background-color: var(--selected-font-color);
-    padding: 12px;
-    width: 30%;
+    background-color: var(--button-color);
+    padding: 10px;
+    width: 22%;
     justify-content: center;
     text-align: center;
 
@@ -48,6 +48,7 @@
     background-color: transparent;
     border: none;
     justify-content: center;
+    font-weight: 600;
 }
 
 .personal-messages{

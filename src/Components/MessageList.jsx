@@ -1,8 +1,6 @@
 import React from 'react'
 import Message from './Message/Message'
 
-//Se mostrará el mapeo de mensajes.
-
 const MessageList = ({ messages }) => {
     let messagesListJSX = messages.map(
         ( message ) => {

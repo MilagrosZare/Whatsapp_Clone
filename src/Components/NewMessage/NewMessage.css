@@ -44,7 +44,7 @@ input {
     font-size: 15px;
 }
 
-.mic-or-send {
+.mic, .send{
     color: var(--icon-primary-color);
     width: 50px;
     align-items: center;

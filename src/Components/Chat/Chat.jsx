@@ -9,9 +9,9 @@ import NewMessage from '../NewMessage/NewMessage'
 const Chat = () => {
   const {contact_id} = useParams()
 
-  const { getContactById, contact_state } = useContext(ContactsContext)
+  const { getContactById, addNewMessage } = useContext(ContactsContext)
 
-  const contact_selected = getContactById(contact_id) //Obtiene el contacto.
+  const contact_selected = getContactById(Number(contact_id)) //Obtiene el contacto.
 
   return (
     <div className='chat-screen'>
@@ -27,7 +27,6 @@ const Chat = () => {
         <div className="component-MessageList">
         <MessageList
         messages={contact_selected.messages}/>
-          {/* stattusMessages={stattusMessages} */}
           </div>
           <div className="component-NewMessage">
             <NewMessage />

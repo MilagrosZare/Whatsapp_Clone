@@ -1,9 +1,10 @@
 .container-contact{
     display: flex;
     border-bottom: 0.5px rgba(104, 119, 127, 0.178) solid;
-    padding: 10px 10px;
-    margin: 5px 20px 0px 0px;
+    padding: 10px;
+    margin: 0 20px 0px 0px;
     gap: 10px;
+    width: 100%;
 }
 
 .contact-img{
@@ -16,5 +17,9 @@
     font-size: 15px;
     color: var(--primary-font-color);
     font-weight: 400;
+    margin-left: 15px;
 }
 
+.container-contact:hover{
+    background-color: var(--secondary-color);
+}

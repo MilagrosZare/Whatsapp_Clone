@@ -75,13 +75,13 @@ const contacts = [
             },
             {
                 user: 'USUARIO',
-                hour: '08:01',
+                hour: '08:02',
                 id: 3,
                 text: 'Vení a la sala verde, por favor, tenemos reunión.',
             },
             {
                 user: 'TÚ',
-                hour: '23:10',
+                hour: '08:03',
                 id: 4,
                 text: '¡Ok! Acomodo mis cosas y voy...',
                 stattus: 'no-visto',
