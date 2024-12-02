@@ -16,7 +16,6 @@ const Contact = ({ id, name, img }) => {
       <Link to={`/contact/${id}`}/> 
         <img src={img} className='contact-img'/>
         <h3 className='contact-name'>{name}</h3>
-        {/* Añadir el último mensaje, ver cómo hacer. */}
         </div>
   )
 }

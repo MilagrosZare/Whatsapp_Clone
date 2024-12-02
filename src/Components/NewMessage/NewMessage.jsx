@@ -12,11 +12,12 @@ const NewMessage = () => {
 
   const { contact_id } = useParams()
 
-  const { getContactById, addNewMessage } = useContext(ContactsContext)
+  const { addNewMessage } = useContext(ContactsContext)
 
   const handleSubmitNewMessage = (event) => {
     event.preventDefault()
-    const text = event.target.send_message.value
+    const text = event.target.send_message.value.trim()
+    if (text !== '')
     addNewMessage(contact_id, text)
     event.target.reset()
   }
@@ -24,7 +25,6 @@ const NewMessage = () => {
   const [ImputEmpty, setImputEmpty] = useState(true);
 
   const handleInputEmpty = (e) => {
-
     e.preventDefault()
 
     setImputEmpty(e.target.value === '')
@@ -42,7 +42,7 @@ const NewMessage = () => {
       </div>
       <form onSubmit={handleSubmitNewMessage} className='input-and-icon'>
         <input type="text" className='input-chat' placeholder='Escribe un mensaje' id='send_message' name='send_message' onChange={handleInputEmpty} />
-        {ImputEmpty &&
+        {!ImputEmpty &&
           <button type='submit' className='send'>
             <IoSendSharp />
           </button>

@@ -1,20 +1,18 @@
 export const getFormattedHour =() => {
-    const currentDate = new Date()
+    const now = new Date()
 
-    let hours = currentDate.getHours()
-
-    let am_pm = 'AM'
+    let hours = now.getHours()
 
     if (hours > 12) {
         hours = hours - 12
-        am_pm = 'PM'
     }
 
-    let minutes = currentDate.getMinutes()
+    let minutes = now.getMinutes()
 
     if (minutes < 10) {
         minutes = '0' + minutes
     }
-    console.log(typeof(minutes))
-    return `${hours}:${minutes} ${am_pm}`
+    return `${hours}:${minutes}`
 }
+
+export default getFormattedHour

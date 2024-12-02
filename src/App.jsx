@@ -16,7 +16,6 @@ function App() {
       <Routes>
         <Route path='/' element={<HomeScreen />} />
         <Route path='/contact/:contact_id' element={<Chat />} />
-        {/* Vuelve al chatScreen porque en ningún momento tiene que cambiar de página, sino que se mantiene en la misma. */}
       </Routes>
     </div>
   )

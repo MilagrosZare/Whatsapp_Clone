@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 import React from 'react'
 import contacts from "../data/messageData";
 import { v4 as uuidv4 } from 'uuid';
+import getFormattedHour from "../helpers/getFormattedHour";
 
 const ContactsContext = createContext()
 
@@ -11,15 +12,17 @@ const ContactsContextProvider = ({ children }) => {
 
     const getContactById = (contact_id) => {
         return contacts_state.find(contact => contact.id === Number(contact_id));
-    };
+    }
 
-    const addNewMessage = (contact_id, text) => {
+    const addNewMessage = (contact_id, text, hour, stattus) => {
         const new_message = {
             user: 'TÚ',
             text: text,
             id: uuidv4(),
-            time: new Date().toLocaleString(),
-        };
+            hour: getFormattedHour(),
+            stattus: 'no-visto'
+        }
+    
 
         setContactsState((prev_contacts_state) =>
             prev_contacts_state.map(contact => {
@@ -27,12 +30,12 @@ const ContactsContextProvider = ({ children }) => {
                     return {
                         ...contact,
                         messages: [...contact.messages, new_message],
-                    };
+                    }
                 }
-                return contact;
+                return contact
             })
-        );
-    };
+        )
+    }
 
     return (
         <ContactsContext.Provider
@@ -47,8 +50,8 @@ const ContactsContextProvider = ({ children }) => {
         >
             {children}
         </ContactsContext.Provider>
-    );
-};
+    )
+}
 
 
 export { ContactsContext, ContactsContextProvider }
