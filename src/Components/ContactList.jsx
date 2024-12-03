@@ -7,19 +7,19 @@ const ContactsList = () => {
     return (
         <>
             <div className='contacts-list'>
-            { contacts.map( ( contact ) =>{
-                return (
-                    <div key={contact.id} className="contact-item">
-                        <Link to={`/contact/${contact.id}`}>
-                        <Contact
-                            img={contact.img}
-                            name={contact.name}
-                            key={contact.id}
-                        />
-                        </Link>
-                    </div>
-                )
-            })}
+                {contacts.map((contact) => {
+                    return (
+                        <div key={contact.id} className="contact-item">
+                            <Link to={`/contact/${contact.id}`}>
+                                <Contact
+                                    img={contact.img}
+                                    name={contact.name}
+                                    key={contact.id}
+                                />
+                            </Link>
+                        </div>
+                    )
+                })}
             </div>
         </>
     )

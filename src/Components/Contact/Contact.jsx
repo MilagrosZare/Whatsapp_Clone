@@ -8,15 +8,15 @@ const Contact = ({ id, name, img }) => {
   const { setSelectedContact } = useContext(ContactsContext);
 
   const handleContactClick = () => {
-    setSelectedContact({id, name, img})
+    setSelectedContact({ id, name, img })
   }
 
   return (
     <div className='container-contact' onClick={handleContactClick}>
-      <Link to={`/contact/${id}`}/> 
-        <img src={img} className='contact-img'/>
-        <h3 className='contact-name'>{name}</h3>
-        </div>
+      <Link to={`/contact/${id}`} />
+      <img src={img} className='contact-img' />
+      <h3 className='contact-name'>{name}</h3>
+    </div>
   )
 }
 

@@ -11,18 +11,18 @@
 }
 
 :root {
-    --primary-color: rgb(17,27,33);
-    --secondary-color: rgb(34,46,53);
-    --tertiary-color: rgb(32,44,51);
-    --selected-color: rgb(10,51,44);
-    --selected-font-color: rgb(0,151,107);
+    --primary-color: rgb(17, 27, 33);
+    --secondary-color: rgb(34, 46, 53);
+    --tertiary-color: rgb(32, 44, 51);
+    --selected-color: rgb(10, 51, 44);
+    --selected-font-color: rgb(0, 151, 107);
     --primary-font-color: rgba(233, 237, 239, 0.932);
-    --secondary-font-color:rgb(104,119,127);
-    --tertiary-font-color: rgb(183,189,192);
-    --icon-primary-color: rgb(126,142,152);
-    --icon-secondary-color:rgb(209,215,219);
-    --background-color: rgb(38,37,36);
-    --button-color: rgb(0,168,132);
-    --blue-check: rgb(83,189,235);
-    --check: rgb(128,174,165);
+    --secondary-font-color: rgb(104, 119, 127);
+    --tertiary-font-color: rgb(183, 189, 192);
+    --icon-primary-color: rgb(126, 142, 152);
+    --icon-secondary-color: rgb(209, 215, 219);
+    --background-color: rgb(38, 37, 36);
+    --button-color: rgb(0, 168, 132);
+    --blue-check: rgb(83, 189, 235);
+    --check: rgb(128, 174, 165);
 }

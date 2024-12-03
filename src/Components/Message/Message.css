@@ -6,12 +6,12 @@
     justify-content: space-between;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: column;
 }
 
-.bottom{
+.bottom {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -56,26 +56,27 @@
 }
 
 
-.message-text{
+.message-text {
     font-size: 13px;
 }
 
-.message-hour{
+.message-hour {
     font-size: 11px;
     color: #ffffffa4;
     text-align: end;
     align-items: end;
-    
+
 }
 
-.message-stattus{
+.message-stattus {
     font-size: 15px;
 }
 
-.blue-double-check{
+.blue-double-check {
     color: var(--blue-check);
 }
 
-.double-check, .pending{
+.double-check,
+.pending {
     color: var(--check);
 }

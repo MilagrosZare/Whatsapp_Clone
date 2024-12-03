@@ -3,17 +3,17 @@ import Message from './Message/Message'
 
 const MessageList = ({ messages }) => {
     let messagesListJSX = messages.map(
-        ( message ) => {
+        (message) => {
             return <Message
-                        user={message.user}
-                        hour={message.hour}
-                        text={message.text}
-                        key={message.id}
-                        stattus={message.stattus}
-                        />
+                user={message.user}
+                hour={message.hour}
+                text={message.text}
+                key={message.id}
+                stattus={message.stattus}
+            />
         }
     )
-       return (
+    return (
         <div className='message-list'>
             {messagesListJSX}
         </div>

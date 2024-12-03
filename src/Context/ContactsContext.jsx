@@ -22,7 +22,7 @@ const ContactsContextProvider = ({ children }) => {
             hour: getFormattedHour(),
             stattus: 'no-visto'
         }
-    
+
 
         setContactsState((prev_contacts_state) =>
             prev_contacts_state.map(contact => {

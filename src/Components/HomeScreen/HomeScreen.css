@@ -1,4 +1,4 @@
-.container-download{
+.container-download {
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
@@ -11,23 +11,23 @@
     margin-top: 20px;
 }
 
-.title-homescreen{
+.title-homescreen {
     font-size: 30px;
     font-weight: 300;
 }
 
-.container-text{
+.container-text {
     font-size: 15px;
     color: #ffffffd2;
     text-align: center;
-    align-items: center ;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 
-.container-text-bottom{
+.container-text-bottom {
     border-radius: 25px;
     background-color: var(--button-color);
     padding: 10px;
@@ -37,27 +37,27 @@
 
 }
 
-.text-homescreen{
+.text-homescreen {
     width: 70%;
     justify-content: center;
     font-weight: 200;
     color: #ffffffd2;
 }
 
-.download-Microsoft{
+.download-Microsoft {
     background-color: transparent;
     border: none;
     justify-content: center;
     font-weight: 600;
 }
 
-.personal-messages{
+.personal-messages {
     color: var(--secondary-font-color);
     font-size: 12px;
     height: 20px;
     padding-top: 150px;
 }
 
-.download-img{
+.download-img {
     width: 20vw;
 }

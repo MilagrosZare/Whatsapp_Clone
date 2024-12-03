@@ -1,10 +1,10 @@
-export const getFormattedHour =() => {
+export const getFormattedHour = () => {
     const now = new Date()
 
     let hours = now.getHours()
 
-    if (hours > 12) {
-        hours = hours - 12
+    if (hours > 24) {
+        hours = hours - 24
     }
 
     let minutes = now.getMinutes()

@@ -1,24 +1,24 @@
-.header{
-    background-color: rgb(32,44,51);
+.header {
+    background-color: rgb(32, 44, 51);
     height: 8vh;
     display: flex;
     flex-direction: row;
     width: 60vw;
 }
 
-.img-and-name{
+.img-and-name {
     display: flex;
     align-items: center;
 }
 
-.img-profile{
+.img-profile {
     width: 45px;
     height: 45px;
     border-radius: 50px;
     margin: 10px 15px 10px 20px;
 }
 
-.name-chat{
+.name-chat {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.icons-chat{
+.icons-chat {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
     font-size: 20px;
 }
 
-.video-call{
+.video-call {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
     gap: 15px;
 }
 
-.video{
+.video {
     font-size: 22px;
 }
 
@@ -54,7 +54,7 @@
     font-size: 12px;
 }
 
-.search-and-dots{
+.search-and-dots {
     display: flex;
     color: var(--tertiary-font-color);
     gap: 25px;

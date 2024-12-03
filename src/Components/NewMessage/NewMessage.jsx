@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../NewMessage/NewMessage.css'
 import { useParams } from 'react-router-dom';
 import { ContactsContext } from '../../Context/ContactsContext';
@@ -14,13 +14,34 @@ const NewMessage = () => {
 
   const { addNewMessage } = useContext(ContactsContext)
 
+  const [messages, setMessages] = useState([]) //NEW
+
+  useEffect(() => { //NEW
+    const currentMessages = JSON.parse(localStorage.getItem('messages')) || {};
+    setMessages(currentMessages[contact_id] || []); //NEW
+  }, [contact_id])
+
   const handleSubmitNewMessage = (event) => {
     event.preventDefault()
     const text = event.target.send_message.value.trim()
+
     if (text !== '')
-    addNewMessage(contact_id, text)
+      addNewMessage(contact_id, text)
+    localStorageMessages(contact_id, text)
+    setMessages((prevMessages => [...prevMessages, text])) //NEW
     event.target.reset()
   }
+
+  const localStorageMessages = (contact_id, text) => {
+
+    const currentMessages = JSON.parse(localStorage.getItem('messages')) || {};
+    const updatedMessages = {
+      ...currentMessages,
+      [contact_id]: [...(currentMessages[contact_id] || []), text]
+    }
+    localStorage.setItem('messages', JSON.stringify(updatedMessages))
+  }
+
 
   const [ImputEmpty, setImputEmpty] = useState(true);
 
@@ -41,7 +62,7 @@ const NewMessage = () => {
         </div>
       </div>
       <form onSubmit={handleSubmitNewMessage} className='input-and-icon'>
-        <input type="text" className='input-chat' placeholder='Escribe un mensaje' id='send_message' name='send_message' onChange={handleInputEmpty} />
+        <input type="text" className='input-chat' placeholder='Escribe un mensaje' id='send_message' name='send_message' onChange={handleInputEmpty} autoComplete='off' />
         {!ImputEmpty &&
           <button type='submit' className='send'>
             <IoSendSharp />

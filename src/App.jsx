@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='full-screen'>
       <div className='always-show'>
-        <Aside/>
+        <Aside />
       </div>
       <Routes>
         <Route path='/' element={<HomeScreen />} />

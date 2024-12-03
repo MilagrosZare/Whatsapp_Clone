@@ -1,4 +1,4 @@
-.message-bar{
+.message-bar {
     display: flex;
     font-size: 25px;
     align-items: center;
@@ -44,7 +44,7 @@ input {
     font-size: 15px;
 }
 
-.mic, .send{
+.mic,.send {
     background: transparent;
     border: none;
     color: var(--icon-primary-color);
