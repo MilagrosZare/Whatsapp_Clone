@@ -3,6 +3,7 @@ import './Aside.css'
 import { BiMessageAdd } from "react-icons/bi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoSearchSharp } from "react-icons/io5";
+import { BiLogoWhatsappSquare } from "react-icons/bi";
 import ContactList from '../ContactList';
 
 
@@ -22,7 +23,7 @@ const Aside = () => {
                     <input type="text" name="searching" placeholder='Buscar' className='searching' />
                 </div>
                 <div className='header-aside-buttons'>
-                    <button className='button-wpp'>Todos</button>
+                    <button className='button-wpp' id='button-selected'>Todos</button>
                     <button className='button-wpp'>No leídos</button>
                     <button className='button-wpp'>Favoritos</button>
                     <button className='button-wpp'>Grupos</button>

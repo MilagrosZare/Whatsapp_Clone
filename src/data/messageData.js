@@ -149,13 +149,13 @@ const contacts = [
                 user: 'USUARIO',
                 hour: '20:25',
                 id: 9,
-                text: '🤢 ¿ROMÁNTICA?',
+                text: 'Pero... ¿de terror? 👀',
             },
             {
                 user: 'TÚ',
                 hour: '20:27',
                 id: 10,
-                text: 'Siii, ¡Me encantan!',
+                text: 'Siii, ¡me encantan!',
                 stattus: 'visto',
             },
             {
@@ -201,6 +201,109 @@ const contacts = [
         ]
 
     },
+    {
+        "img": "/assets/profile-7.jpg",
+        "name": "Andrés",
+        "id": 6,
+        "messages": [
+            {
+                "user": "USUARIO",
+                "hour": "11:28",
+                "id": 1,
+                "text": "Buenas amigaa.",
+            },
+            {
+                "user": "TÚ",
+                "hour": "11:30",
+                "id": 2,
+                "text": "¡Buenas! ¿Cómo va todo por allá?",
+                "stattus": "visto"
+            },
+            {
+                "user": "TÚ",
+                "hour": "11:31",
+                "id": 3,
+                "text": "¿Qué tal esas vacaciones? 🌎",
+                "stattus": "visto"
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:32",
+                "id": 4,
+                "text": "Uff, todo lo que tengo para contarte. Hermosas las vistas, hermoso el hotel, ¡todo!",
+            },
+            {
+                "user": "TÚ",
+                "hour": "11:33",
+                "id": 5,
+                "text": "No sabés cuánto gusto me da leer esto. Te lo merecías después de tanto trabajo la verdad...",
+                "stattus": "visto"
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:40",
+                "id": 6,
+                "text": "Gracias amigaaaa.",
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:40",
+                "id": 7,
+                "text": "¿Sabés qué estaba pensando para mi regreso?",
+            },
+            {
+                "user": "TÚ",
+                "hour": "11:41",
+                "id": 8,
+                "text": "🤔🤔🤔",
+                "stattus": "visto"
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:43",
+                "id": 9,
+                "text": "Ir al festival de este sábado. Ya estuve viendo las entradas, no es tan caro. ¡Yo invito!",
+            },
+            {
+                "user": "TÚ",
+                "hour": "11:45",
+                "id": 10,
+                "text": "Queeeee. ",
+                "stattus": "visto"
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:46",
+                "id": 11,
+                "text": "Dale, ¡vamos!",
+            },
+            {
+                "user": "TÚ",
+                "hour": "11:50",
+                "id": 12,
+                "text": "Sisis, por favor, van a estar un par de artistas que me encantan, ¡no me lo perdería!",
+                "stattus": "visto"
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:52",
+                "id": 13,
+                "text": "Genial, más tarde saco las entradas.",
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:53",
+                "id": 14,
+                "text": "Hey, te dejo que tenemos una actividad y todavía no preparé nada. 🤣",
+            },
+            {
+                "user": "USUARIO",
+                "hour": "11:53",
+                "id": 15,
+                "text": "Nos vemos a la vuelta. 💖",
+            }
+        ]
+    }
 
 ]
 
