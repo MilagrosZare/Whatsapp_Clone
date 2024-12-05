@@ -7,7 +7,7 @@
 }
 
 .component-HeaderChat {
-    height: 8vh;
+    height: 7vh;
 }
 
 .component-MessageList {
@@ -43,14 +43,26 @@
     width: 60vw;
 }
 
-@media (min-width: 320px) and (max-width: 700px) {
+@media (min-width: 701px) and (max-width: 930px) {
 
     .chat-screen {
-        display: flex;
-        flex-direction: column;
         width: 100vw;
-        height: 100vh;
-        justify-content: space-between
+        height: 95vh;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    .component-HeaderChat {
+        height: 6vh;
+    }
+
+    .chat-screen {
+        width: 100vw;
+        height: 97vh;
+        justify-content: space-between;
     }
 
 }

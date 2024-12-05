@@ -108,15 +108,23 @@
 
 @media (min-width: 701px) and (max-width: 930px) {
 
-    .header-aside-buttons {
+    .container-contacts {
+        background-color: var(--primary-color);
+        width: 25vw;
+        height: 95vh;
+        margin: 20px 0 0 20px;
+    }
 
-        gap: 5px;
+    .header-aside-buttons {
+        display: inline-block;
         margin-left: 5px;
+
     }
 
     .button-wpp {
         font-size: 10px;
         padding: 6px;
+        margin-top: 6px;
     }
 }
 

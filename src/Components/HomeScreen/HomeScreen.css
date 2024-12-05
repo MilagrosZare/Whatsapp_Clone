@@ -31,7 +31,8 @@
     border-radius: 25px;
     background-color: var(--button-color);
     padding: 10px;
-    width: 22%;
+    width: 250px;
+    height: 40px;
     justify-content: center;
     text-align: center;
 
@@ -59,5 +60,5 @@
 }
 
 .download-img {
-    width: 20vw;
+    width: 350px;
 }
