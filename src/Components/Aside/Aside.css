@@ -131,6 +131,20 @@
 @media (min-width: 320px) and (max-width: 700px) {
 
     .container-contacts {
-        display: none;
+        display: block;
+        width: 100vw; 
+        height: 100vh; 
+        margin: 0; 
+        background-color: var(--primary-color);
+    }
+
+    .header-aside-buttons {
+        flex-wrap: wrap; 
+        gap: 10px;
+        justify-content: center; 
+    }
+
+    .button-wpp {
+        font-size: 12px;
     }
 }

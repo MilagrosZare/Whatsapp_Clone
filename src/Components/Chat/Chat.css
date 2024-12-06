@@ -8,10 +8,12 @@
 
 .component-HeaderChat {
     height: 7vh;
+    width: 100%;
 }
 
 .component-MessageList {
     flex: 1;
+    width: 100%;
     height: 50px;
     overflow-y: scroll;
     overflow-x: none;
@@ -30,9 +32,10 @@
     border-radius: 10px;
 }
 
-.component-NewMessage {
-    height: auto;
-}
+.component-NewMessage{
+    width: 100%;
+}    
+
 
 .chat-screen {
     background-image: url(/assets/wallpaper-dark-mode.png);
@@ -42,6 +45,21 @@
     margin-top: 20px;
     width: 60vw;
 }
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .chat-wrapper aside {
+    width: 25%;
+  }
+
+  .chat-wrapper .chat-screen{
+    flex: 1;
+  }
 
 @media (min-width: 701px) and (max-width: 930px) {
 
@@ -54,10 +72,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 700px) {
-
-    .component-HeaderChat {
-        height: 6vh;
-    }
 
     .chat-screen {
         width: 100vw;

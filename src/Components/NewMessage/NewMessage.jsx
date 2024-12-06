@@ -14,11 +14,11 @@ const NewMessage = () => {
 
   const { addNewMessage } = useContext(ContactsContext)
 
-  const [messages, setMessages] = useState([]) //NEW
+  const [messages, setMessages] = useState([]) //localStorage
 
-  useEffect(() => { //NEW
+  useEffect(() => {
     const currentMessages = JSON.parse(localStorage.getItem('messages')) || {};
-    setMessages(currentMessages[contact_id] || []); //NEW
+    setMessages(currentMessages[contact_id] || []);
   }, [contact_id])
 
   const handleSubmitNewMessage = (event) => {
@@ -28,7 +28,7 @@ const NewMessage = () => {
     if (text !== '')
       addNewMessage(contact_id, text)
     localStorageMessages(contact_id, text)
-    setMessages((prevMessages => [...prevMessages, text])) //NEW
+    setMessages((prevMessages => [...prevMessages, text])) //localStorage end
     event.target.reset()
   }
 
