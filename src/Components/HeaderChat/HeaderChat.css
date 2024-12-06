@@ -60,6 +60,16 @@
 
 }
 
+.return-arrow{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+    height: 45px;
+    color: var(--tertiary-font-color);
+
+}
 
 @media (min-width: 701px) and (max-width: 930px) {
 

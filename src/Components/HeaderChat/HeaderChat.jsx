@@ -4,16 +4,23 @@ import { FaVideo } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa6";
 import { IoSearchSharp } from "react-icons/io5";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { ContactsContext } from '../../Context/ContactsContext';
+import { useNavigate } from 'react-router-dom';
 
 
 const HeaderChat = () => {
 
   const { selected_contact } = useContext(ContactsContext)
+  const { isMobile } = useContext(ContactsContext)
+  const navigate = useNavigate()
 
   return (
     <>
       <div className='header'>
+        {isMobile && (
+          <button className='return-arrow' onClick={() => navigate('/')}><FaArrowLeftLong /></button>
+        )}
         {selected_contact && (
           <div className='img-and-name'>
             <img src={selected_contact.img} alt={selected_contact.name} className='img-profile' />
