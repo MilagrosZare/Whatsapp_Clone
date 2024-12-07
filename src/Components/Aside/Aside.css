@@ -126,6 +126,13 @@
         padding: 6px;
         margin-top: 6px;
     }
+
+    .aside-top-icons {
+        font-size: 20px;
+        height: 30px;
+        gap: 10px;
+        margin: 35px 20px 0px 0px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 700px) {
@@ -147,4 +154,5 @@
     .button-wpp {
         font-size: 12px;
     }
+
 }

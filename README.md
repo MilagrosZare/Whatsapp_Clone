@@ -2,8 +2,7 @@
 Clon de Whatsapp Web. 
 
 ## Librerías utilizadas: 
-React-router-dom
-React-Icons
+React-router-dom // React-Icons
 
 ## Dificultades: 
 Si bien hay una parte del localStorage realizado, logré que se guarde en el almacenamiento, pero al momento de cerrar el navegador y volver a abrirlo, lo que no pude lograr es que se renderice lo que previamente se había guardado. Entiendo que es una oportunidad enorme de mejora, porque a pesar de haber buscado cómo realizarlo, no logré con ese objetivo.
